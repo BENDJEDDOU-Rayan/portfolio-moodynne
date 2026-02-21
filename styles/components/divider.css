@@ -1,0 +1,39 @@
+.divider {
+  width: 100%;
+  border-top: 1px solid #ffffff;
+  background-color: #ffffff;
+}
+
+.divider--desktop {
+  display: none;
+  grid-column: 1 / -1;
+}
+/* sm */
+@media (min-width: 640px) {
+}
+
+/* md */
+@media (min-width: 768px) {
+  .divider {
+    display: none;
+  }
+  .divider--desktop {
+    display: block;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+}
+
+/* xl */
+@media (min-width: 1280px) {
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+}
+
+/* 3xl */
+@media (min-width: 1920px) {
+}

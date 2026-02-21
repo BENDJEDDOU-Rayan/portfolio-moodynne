@@ -1,0 +1,132 @@
+.colorful-range {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+}
+
+.colorful-range__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  grid-column: 2 / -1;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.colorful-range__title {
+  font-family: "TT Commons Thin";
+  font-size: 2rem;
+  color: #ffffff;
+  grid-column: 2 / 12;
+  margin-top: 1rem;
+  font-weight: 400;
+  margin-left: -2px;
+}
+
+.colorful-range__band-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.colorful-range__band {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #000000;
+}
+
+.colorful-range__band--EB651C {
+  background-color: #eb651c;
+}
+
+.colorful-range__band--367243 {
+  background-color: #367243;
+}
+
+.colorful-range__band--CC3D37 {
+  background-color: #cc3d37;
+}
+
+.colorful-range__band--4F9AD4 {
+  background-color: #4f9ad4;
+}
+
+.colorful-range__band--FCF4F0 {
+  background-color: #fcf4f0;
+}
+
+.colorful-range__band--FFCA00 {
+  background-color: #ffca00;
+}
+
+.colorful-range__band--ED6C0C {
+  background-color: #ed6c0c;
+}
+
+.colorful-range__band--E30616 {
+  background-color: #e30616;
+}
+
+.colorful-range__band--1E3F3A {
+  background-color: #1e3f3a;
+}
+
+.colorful-range__band--F1E1C3 {
+  background-color: #f1e1c3;
+}
+
+.colorful-range__band--F3C539 {
+  background-color: #f3c539;
+}
+.colorful-range__band--B3C8D8 {
+  background-color: #b3c8d8;
+}
+.colorful-range__band--769CBE {
+  background-color: #769cbe;
+}
+.colorful-range__band--4A74A7 {
+  background-color: #4a74a7;
+}
+
+.colorful-range__label {
+  font-family: "Dosis Light";
+  color: #ffffff;
+  font-size: clamp(1.25rem, 0.75rem + 1.0417vw, 2rem);
+}
+
+.colorful-range__label--black {
+  color: #000000;
+}
+
+/* sm */
+@media (min-width: 640px) {
+}
+
+/* md */
+@media (min-width: 768px) {
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .colorful-range__title {
+    font-size: 3rem;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .colorful-range__title {
+    font-size: 4rem;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .colorful-range__title {
+    font-size: 4.5rem;
+  }
+}
+
+/* 3xl */
+@media (min-width: 1920px) {
+}

@@ -1,0 +1,86 @@
+.footer {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__infos {
+  position: relative;
+  display: flex;
+  border-inline: 1px solid #000000;
+  width: calc(100% - 4rem);
+  max-width: 1920px;
+  align-items: center;
+}
+
+.footer__location,
+.footer__mail {
+  font-family: "Gravita GEO Medium";
+  font-size: 0.625rem;
+  color: #000000;
+  text-align: center;
+  width: 564.93%;
+}
+
+.footer__location {
+  display: none;
+  width: 33.9%;
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.875rem;
+  padding: 0.5rem 1.75rem;
+  width: 35.07%;
+}
+
+.footer__socials img {
+  display: flex;
+}
+
+/* sm */
+@media (min-width: 640px) {
+}
+
+/* md */
+@media (min-width: 768px) {
+  .footer__infos {
+    width: calc(100% - 8rem);
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .footer__infos {
+    width: 73%;
+  }
+  .footer__infos--about {
+    width: 85%;
+  }
+  .footer__location {
+    display: block;
+  }
+  .footer__mail {
+    width: 50.75%;
+  }
+  .footer__socials {
+    width: 15.35%;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+}
+
+/* 3xl */
+@media (min-width: 1920px) {
+}

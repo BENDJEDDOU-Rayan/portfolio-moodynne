@@ -1,0 +1,12 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("./../../img/background.png") repeat center;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
