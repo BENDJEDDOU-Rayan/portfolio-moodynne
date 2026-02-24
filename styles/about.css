@@ -106,8 +106,11 @@
   display: none;
   width: 75%;
   border-inline: 1px solid #ffffff;
-  flex: 1;
+  height: 104px;
   max-width: 1920px;
+}
+
+.about__bottom-spacing {
 }
 
 /* sm */

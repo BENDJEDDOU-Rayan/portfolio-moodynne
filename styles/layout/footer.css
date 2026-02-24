@@ -25,7 +25,8 @@
   font-weight: normal;
   color: #000000;
   text-align: center;
-  outline: 1px solid #000000;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
   height: 39px;
   margin-top: 1.5rem;
   align-content: center;
@@ -34,6 +35,10 @@
 .footer__divider {
   height: 100%;
   border-right: 1px solid #000000;
+}
+
+.footer__divider--mobile-only {
+  display: block;
 }
 
 .footer__divider--desktop {
@@ -56,7 +61,8 @@
   justify-content: center;
   gap: 1rem;
   margin-top: 1.5rem;
-  outline: 1px solid #000000;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
   height: 39px;
 }
 
@@ -92,6 +98,7 @@
   }
   .footer__socials {
     flex: 1;
+    border-left: 1px solid #000000;
   }
   .footer__location,
   .footer__mail,
@@ -102,6 +109,9 @@
   .footer__divider--desktop,
   .footer__location {
     display: block;
+  }
+  .footer__divider--mobile-only {
+    display: none;
   }
   .footer__socials img {
     height: 26px;
