@@ -1,0 +1,207 @@
+@import url("./base/base.css");
+
+@import url("./layout/header.css");
+@import url("./layout/footer.css");
+
+@import url("./components/divider.css");
+
+@import url("./utils.css");
+
+@font-face {
+  font-family: "Gravita GEO Medium";
+  src: url("./../fonts/Gravita-GEO-Medium.otf");
+}
+
+@font-face {
+  font-family: "Gravita GEO Light";
+  src: url("./../fonts/Gravita-GEO-Light-.otf");
+}
+
+@font-face {
+  font-family: "Dosis Light";
+  src: url("./../fonts/Dosis-Light.ttf");
+}
+
+@font-face {
+  font-family: "Gimbo Black";
+  src: url("./../fonts/Gimbo-Black.otf");
+}
+
+@font-face {
+  font-family: "TT Commons Black";
+  src: url("./../fonts/TT-Commons-Black.otf");
+}
+
+@font-face {
+  font-family: "TT Commons Light";
+  src: url("./../fonts/TT-Commons-Light.otf");
+}
+
+@font-face {
+  font-family: "TT Commons Thin";
+  src: url("./../fonts/TT-Commons-Thin.otf");
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  border-inline: 1px solid #ffffff;
+}
+
+.projects__title {
+  font-family: "TT Commons Black";
+  font-weight: normal;
+  font-size: clamp(5rem, 2.2727rem + 13.6364vw, 11rem);
+  color: #ffffff;
+  padding: 0.625rem 0 1.25rem 0;
+  border-bottom: 1px solid #ffffff;
+  text-align: center;
+  width: 100%;
+}
+
+.projects__arrows {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  padding: 0.25rem 0.25rem clamp(0.625rem, 0.1786rem + 2.2321vw, 1.25rem) 0.25rem;
+  border-bottom: 1px solid #ffffff;
+}
+
+.project-card__infos,
+.project-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.project-card__infos {
+  padding: 1rem 1.25rem;
+}
+
+.project-card:first-of-type {
+  margin-top: 1rem;
+}
+
+.project-card__thumbnail {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 650 / 274;
+}
+
+.project-card__title {
+  font-family: "Gravita GEO Light";
+  font-size: 1.25rem;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.project-card__description {
+  font-family: "Dosis Light";
+  font-size: 0.75rem;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+/* sm */
+@media (min-width: 640px) {
+}
+
+/* md */
+@media (min-width: 768px) {
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: stretch;
+    column-gap: clamp(0.5rem, -0.1667rem + 1.3889vw, 1.5rem);
+  }
+  .projects__title {
+    grid-column: 1 / 6;
+    font-size: clamp(4rem, -0.125rem + 8.5938vw, 12.25rem);
+    height: 100%;
+    align-content: center;
+    border-bottom: none;
+    text-align: left;
+    padding: 0;
+    padding-left: clamp(0.75rem, 0.125rem + 1.3021vw, 2rem);
+  }
+  .projects__arrows {
+    grid-column: 6 / 13;
+    grid-row: 1;
+    border-bottom: none;
+    border-left: 1px solid #ffffff;
+  }
+  .project-card:first-of-type {
+    margin-top: 0;
+  }
+  .project-card {
+    grid-column: span 3;
+  }
+  #take-a-break .project-card__thumbnail,
+  #jpo-diderot .project-card__thumbnail,
+  #memoire-dnmade .project-card__thumbnail {
+    border: 1px solid #ffffff;
+  }
+  #take-a-break,
+  #marmite-joyeuse {
+    grid-column: span 5;
+  }
+  #take-a-break .project-card__thumbnail,
+  #marmite-joyeuse .project-card__thumbnail {
+    aspect-ratio: 587 / 549;
+  }
+  #anthropologie,
+  #meeal {
+    grid-column: span 7;
+  }
+  #anthropologie .project-card__thumbnail,
+  #meeal .project-card__thumbnail {
+    aspect-ratio: 831 / 549;
+  }
+  #jpo-diderot,
+  #memoire-dnmade {
+    grid-column: span 8;
+  }
+  #jpo-diderot .project-card__thumbnail,
+  #memoire-dnmade .project-card__thumbnail {
+    aspect-ratio: 953 / 549;
+  }
+  #typo-doppler,
+  #typo-meeal {
+    grid-column: span 4;
+  }
+
+  #typo-doppler .project-card__thumbnail,
+  #typo-meeal .project-card__thumbnail {
+    aspect-ratio: 465 / 549;
+  }
+
+  #meeal > .project-card__infos,
+  #take-a-break > .project-card__infos,
+  #typo-meeal > .project-card__infos,
+  #jpo-diderot > .project-card__infos {
+    padding-left: 0;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .projects {
+    width: 75%;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+}
+
+/* 3xl */
+@media (min-width: 1920px) {
+}

@@ -1,0 +1,109 @@
+@import url("./base/base.css");
+@import url("./base/project.css");
+
+@import url("./layout/header.css");
+@import url("./layout/footer.css");
+
+@import url("./components/colorful_range.css");
+@import url("./components/divider.css");
+
+@import url("./utils.css");
+
+@font-face {
+  font-family: "Gravita GEO Medium";
+  src: url("./../fonts/Gravita-GEO-Medium.otf");
+}
+
+@font-face {
+  font-family: "Gravita GEO Light";
+  src: url("./../fonts/Gravita-GEO-Light-.otf");
+}
+
+@font-face {
+  font-family: "Dosis Light";
+  src: url("./../fonts/Dosis-Light.ttf");
+}
+
+@font-face {
+  font-family: "Gimbo Black";
+  src: url("./../fonts/Gimbo-Black.otf");
+}
+
+@font-face {
+  font-family: "TT Commons Black";
+  src: url("./../fonts/TT-Commons-Black.otf");
+}
+
+@font-face {
+  font-family: "TT Commons Light";
+  src: url("./../fonts/TT-Commons-Light.otf");
+}
+
+@font-face {
+  font-family: "TT Commons Thin";
+  src: url("./../fonts/TT-Commons-Thin.otf");
+}
+
+.project__pictures--marmite-joyeuse {
+  margin-top: clamp(1.5rem, 1.4194rem + 0.4032vw, 2rem);
+  gap: clamp(0.5rem, 0.3387rem + 0.8065vw, 1.5rem);
+}
+
+.marmite-joyeuse__post-it,
+.marmite-joyeuse__visit-card,
+.marmite-joyeuse__pictures-stack img,
+.marmite-joyeuse__support-long-pic,
+.marmite-joyeuse__other-pic,
+.marmite-joyeuse__second-pic,
+.marmite-joyeuse__first-pic {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.marmite-joyeuse__support-long-pic {
+  height: 100%;
+  object-fit: cover;
+}
+
+.marmite-joyeuse__first-pic {
+  grid-column: span 5;
+}
+
+.marmite-joyeuse__second-pic {
+  grid-column: span 7;
+}
+.marmite-joyeuse__other-pic {
+  grid-column: span 4;
+}
+
+.marmite-joyeuse__support-long-pic-wrapper {
+  grid-column: 7 / 12;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.marmite-joyeuse__pictures-stack {
+  grid-column: 2 / 7;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.5rem, 0.3387rem + 0.8065vw, 1.5rem);
+}
+
+.marmite-joyeuse__visit-card {
+  position: absolute;
+  width: 140%;
+  top: -5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.marmite-joyeuse__post-it {
+  position: absolute;
+  width: 170%;
+  bottom: -4%;
+  left: -33%;
+}

@@ -1,0 +1,74 @@
+@import url("./base/base.css");
+@import url("./base/project.css");
+
+@import url("./layout/header.css");
+@import url("./layout/footer.css");
+
+@import url("./components/divider.css");
+
+@import url("./utils.css");
+
+@font-face {
+  font-family: "Gravita GEO Medium";
+  src: url("./../fonts/Gravita-GEO-Medium.otf");
+}
+
+@font-face {
+  font-family: "Gravita GEO Light";
+  src: url("./../fonts/Gravita-GEO-Light-.otf");
+}
+
+@font-face {
+  font-family: "Dosis Light";
+  src: url("./../fonts/Dosis-Light.ttf");
+}
+
+@font-face {
+  font-family: "Gimbo Black";
+  src: url("./../fonts/Gimbo-Black.otf");
+}
+
+@font-face {
+  font-family: "TT Commons Black";
+  src: url("./../fonts/TT-Commons-Black.otf");
+}
+
+@font-face {
+  font-family: "TT Commons Light";
+  src: url("./../fonts/TT-Commons-Light.otf");
+}
+
+@font-face {
+  font-family: "TT Commons Thin";
+  src: url("./../fonts/TT-Commons-Thin.otf");
+}
+
+.project__other-title--jpo-diderot {
+  margin-top: clamp(1.25rem, 0.4545rem + 3.9773vw, 3rem);
+}
+
+.project__pictures--jpo-diderot {
+  gap: clamp(0.5rem, 0.3387rem + 0.8065vw, 1.5rem);
+}
+
+.jpo-diderot__other-pic,
+.jpo-diderot__gif,
+.jpo-diderot__logotype {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.jpo-diderot__gif,
+.jpo-diderot__logotype {
+  grid-column: 2 / 12;
+}
+
+.jpo-diderot__other-pic {
+  grid-column: span 5;
+}
+
+.jpo-diderot__other-pic--left {
+  grid-column: 2 / 7;
+}

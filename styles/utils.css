@@ -34,30 +34,6 @@
   margin-top: 5rem;
 }
 
-.project-title-fix {
-  margin-left: -0.6%;
-}
-
-/* sm */
-@media (min-width: 640px) {
-}
-
-/* md */
-@media (min-width: 768px) {
-}
-
-/* lg */
-@media (min-width: 1024px) {
-}
-
-/* xl */
-@media (min-width: 1280px) {
-}
-
-/* 2xl */
-@media (min-width: 1536px) {
-}
-
-/* 3xl */
-@media (min-width: 1920px) {
+.no-mt {
+  margin-top: 0 !important;
 }

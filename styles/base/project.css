@@ -1,0 +1,98 @@
+.project {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 80%;
+  border-inline: 1px solid #ffffff;
+  max-width: 1920px;
+}
+
+.project__title {
+  font-family: "TT Commons Light";
+  font-size: clamp(1.125rem, 0.1371rem + 4.9395vw, 7.25rem);
+  font-weight: normal;
+  color: #ffffff;
+  grid-column: 2 / 12;
+  white-space: nowrap;
+  margin-top: clamp(0.75rem, 0.629rem + 0.6048vw, 1.5rem);
+  margin-bottom: clamp(0.5rem, 0.2581rem + 1.2097vw, 2rem);
+}
+
+.project__title--fix {
+  margin-left: -0.5%;
+}
+
+.project__paragraph,
+.project__description {
+  font-family: "Dosis Light";
+  font-size: clamp(0.75rem, 0.6694rem + 0.4032vw, 1.25rem);
+  font-weight: normal;
+  color: #ffffff;
+  grid-column: 2 / 12;
+}
+
+.project__description {
+  margin-bottom: clamp(1rem, 0.5968rem + 2.0161vw, 3.5rem);
+}
+
+.project__paragraph {
+  margin-top: clamp(1rem, 0.6573rem + 1.7137vw, 3.125rem);
+  margin-bottom: clamp(0.5rem, 0.1573rem + 1.7137vw, 2.625rem);
+}
+
+.project__pictures {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.project__other-title {
+  font-family: "TT Commons Thin";
+  font-size: clamp(1.125rem, 0.3387rem + 3.9315vw, 6rem);
+  font-weight: normal;
+  color: #ffffff;
+  grid-column: 2 / 12;
+  margin-bottom: clamp(0.5rem, 0.3387rem + 0.8065vw, 1.5rem);
+}
+
+.project__links {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: clamp(2.5rem, 2.0968rem + 2.0161vw, 5rem) 0;
+  gap: clamp(1.5rem, 1.2782rem + 1.1089vw, 2.875rem);
+}
+
+.project__links img {
+  height: clamp(48px, 40.9032px + 2.2177vw, 92px);
+  width: clamp(48px, 40.9032px + 2.2177vw, 92px);
+  display: block;
+  object-fit: contain;
+}
+
+/* sm */
+@media (min-width: 640px) {
+}
+
+/* md */
+@media (min-width: 768px) {
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .project {
+    width: 75%;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+}
+
+/* 3xl */
+@media (min-width: 1920px) {
+}

@@ -1,38 +1,36 @@
 .colorful-range {
+  grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   width: 100%;
+  margin-top: clamp(1rem, 0.7581rem + 1.2097vw, 2.5rem);
 }
 
 .colorful-range__container {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: clamp(0.75rem, 0.629rem + 0.6048vw, 1.5rem);
   grid-column: 2 / -1;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 .colorful-range__title {
   font-family: "TT Commons Thin";
-  font-size: 2rem;
+  font-size: clamp(1.125rem, 0.3387rem + 3.9315vw, 6rem);
+  font-weight: normal;
   color: #ffffff;
   grid-column: 2 / 12;
-  margin-top: 1rem;
-  font-weight: 400;
-  margin-left: -2px;
+  margin-left: -0.25%;
 }
 
 .colorful-range__band-container {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: clamp(0.5rem, 0.3387rem + 0.8065vw, 1.5rem);
 }
 
 .colorful-range__band {
   width: 100%;
   padding: 0.5rem 0.75rem;
-  border: 1px solid #000000;
 }
 
 .colorful-range__band--EB651C {
@@ -108,23 +106,14 @@
 
 /* lg */
 @media (min-width: 1024px) {
-  .colorful-range__title {
-    font-size: 3rem;
-  }
 }
 
 /* xl */
 @media (min-width: 1280px) {
-  .colorful-range__title {
-    font-size: 4rem;
-  }
 }
 
 /* 2xl */
 @media (min-width: 1536px) {
-  .colorful-range__title {
-    font-size: 4.5rem;
-  }
 }
 
 /* 3xl */

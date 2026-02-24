@@ -1,0 +1,83 @@
+@import url("./base/base.css");
+@import url("./base/project.css");
+
+@import url("./layout/header.css");
+@import url("./layout/footer.css");
+
+@import url("./components/colorful_range.css");
+@import url("./components/divider.css");
+
+@import url("./utils.css");
+
+@font-face {
+  font-family: "Gravita GEO Medium";
+  src: url("./../fonts/Gravita-GEO-Medium.otf");
+}
+
+@font-face {
+  font-family: "Gravita GEO Light";
+  src: url("./../fonts/Gravita-GEO-Light-.otf");
+}
+
+@font-face {
+  font-family: "Dosis Light";
+  src: url("./../fonts/Dosis-Light.ttf");
+}
+
+@font-face {
+  font-family: "Gimbo Black";
+  src: url("./../fonts/Gimbo-Black.otf");
+}
+
+@font-face {
+  font-family: "TT Commons Black";
+  src: url("./../fonts/TT-Commons-Black.otf");
+}
+
+@font-face {
+  font-family: "TT Commons Light";
+  src: url("./../fonts/TT-Commons-Light.otf");
+}
+
+@font-face {
+  font-family: "TT Commons Thin";
+  src: url("./../fonts/TT-Commons-Thin.otf");
+}
+
+.project__pictures--anthropologie {
+  margin-top: clamp(1.5rem, 1.4194rem + 0.4032vw, 2rem);
+  gap: clamp(0.5rem, 0.3387rem + 0.8065vw, 1.5rem);
+}
+
+.anthropologie__cover-pic,
+.anthropologie__other-pic,
+.anthropologie__second-pic,
+.anthropologie__first-pic {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.anthropologie__first-pic {
+  grid-column: span 5;
+}
+
+.anthropologie__second-pic {
+  grid-column: span 7;
+}
+
+.anthropologie__other-pic {
+  grid-column: span 4;
+}
+.anthropologie__cover-pic {
+  min-width: 0;
+}
+
+.anthropologie__cover {
+  grid-column: 2 / 12;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  width: 100%;
+}

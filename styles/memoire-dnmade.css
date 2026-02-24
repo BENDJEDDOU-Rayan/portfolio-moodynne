@@ -1,0 +1,102 @@
+@import url("./base/base.css");
+@import url("./base/project.css");
+
+@import url("./layout/header.css");
+@import url("./layout/footer.css");
+
+@import url("./components/colorful_range.css");
+@import url("./components/divider.css");
+
+@import url("./utils.css");
+
+@font-face {
+  font-family: "Gravita GEO Medium";
+  src: url("./../fonts/Gravita-GEO-Medium.otf");
+}
+
+@font-face {
+  font-family: "Gravita GEO Light";
+  src: url("./../fonts/Gravita-GEO-Light-.otf");
+}
+
+@font-face {
+  font-family: "Dosis Light";
+  src: url("./../fonts/Dosis-Light.ttf");
+}
+
+@font-face {
+  font-family: "Gimbo Black";
+  src: url("./../fonts/Gimbo-Black.otf");
+}
+
+@font-face {
+  font-family: "TT Commons Black";
+  src: url("./../fonts/TT-Commons-Black.otf");
+}
+
+@font-face {
+  font-family: "TT Commons Light";
+  src: url("./../fonts/TT-Commons-Light.otf");
+}
+
+@font-face {
+  font-family: "TT Commons Thin";
+  src: url("./../fonts/TT-Commons-Thin.otf");
+}
+
+.project__pictures--memoire-dnmade {
+  margin-top: clamp(1.5rem, 1.4194rem + 0.4032vw, 2rem);
+  gap: clamp(0.5rem, 0.3387rem + 0.8065vw, 1.5rem);
+}
+
+.memoire-dnmade__big-page,
+.memoire-dnmade__short-page,
+.memoire-dnmade__third-pic,
+.memoire-dnmade__second-pic,
+.memoire-dnmade__video {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.memoire-dnmade__video {
+  grid-column: 1 / -1;
+  outline: 1px solid #ffffff;
+}
+
+.memoire-dnmade__second-pic {
+  grid-column: span 5;
+}
+
+.memoire-dnmade__third-pic {
+  grid-column: span 7;
+}
+
+.memoire-dnmade__short-page {
+  grid-column: span 5;
+}
+
+.memoire-dnmade__big-page {
+  grid-column-start: 2;
+  grid-column: 2 / 12;
+}
+
+.memoire-dnmade__short-page:first-child {
+  grid-column: 2 / 7;
+}
+
+.memoire-dnmade__more-pic {
+  grid-column: 2 / 12;
+  display: flex;
+  gap: clamp(0.5rem, 0.3387rem + 0.8065vw, 1.5rem);
+  min-width: 0;
+  margin-bottom: clamp(1rem, 0.6573rem + 1.7137vw, 3.125rem);
+}
+
+.memoire-dnmade__more-pic img {
+  width: 100%;
+  height: auto;
+  display: block;
+  min-width: 0;
+}

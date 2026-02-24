@@ -8,6 +8,14 @@
   display: none;
   grid-column: 1 / -1;
 }
+
+.divider--col-span {
+  grid-column: 1 / -1;
+}
+
+.divider--permanent {
+  display: block;
+}
 /* sm */
 @media (min-width: 640px) {
 }
@@ -17,6 +25,7 @@
   .divider {
     display: none;
   }
+  .divider--permanent,
   .divider--desktop {
     display: block;
   }

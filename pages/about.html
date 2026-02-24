@@ -8,17 +8,20 @@
     <link rel="stylesheet" href="./../styles/about.css" />
   </head>
   <body>
-    <!-- Mobile version -->
     <nav class="header">
-      <a href="./../index.html" class="header__link">Projets</a>
-      <a href="./pages/about.html" class="header__link header__link--active">À propos</a>
-      <a href="#contact" class="header__link">Contact</a>
+      <a href="./../index.html" class="header__ilyes">Mouddine Ilyes - Designer Graphique</a>
+      <div class="header__link-group">
+        <a href="./../index.html" class="header__link">Projets</a>
+        <a href="#" class="header__link header__link--active">À propos</a>
+        <a href="#contact" class="header__link">Contact</a>
+      </div>
     </nav>
-    <div class="divider"></div>
+    <!-- Mobile version -->
+    <div class="divider divider--permanent"></div>
     <section class="about">
       <h1 class="about__title">À propos</h1>
-      <div class="about__pic-container">
-        <img src="./../img/about/GIF BRUIT ANIMATION.gif" class="about__noise-bg" />
+      <div class="about__pic-wrapper">
+        <img src="./../img/about/GIF BRUIT ANIMATION.gif" class="about__noisy-bg" />
         <img src="./../img/about/ilyes.png" class="about__moodynne" />
       </div>
       <p class="about__paragraph">
@@ -33,17 +36,8 @@
       </p>
     </section>
     <!-- Desktop version -->
-    <nav class="header header--desktop header--about">
-      <p class="header__ilyes">Mouddine Ilyes - Designer Graphique</p>
-      <div class="header__link-container">
-        <a href="./../index.html" class="header__link">Projets</a>
-        <a href="#" class="header__link header__link--active">À propos</a>
-        <a href="#contact" class="header__link">Contact</a>
-      </div>
-    </nav>
-    <div class="divider divider--desktop"></div>
     <section class="about about--desktop">
-      <div class="about__infos">
+      <div class="about__title-wrapper">
         <h2 class="about__title">À propos</h2>
         <div class="divider divider--desktop"></div>
         <p class="about__paragraph">
@@ -56,16 +50,20 @@
           Je cherche avant tout à continuer d’évoluer, à affiner mon approche du design graphique et à m’inscrire dans
           des projets qui me permettent de repousser mes limites, tant sur le plan créatif que conceptuel.
         </p>
+        <div class="divider divider--desktop"></div>
       </div>
-      <div class="about__pic-container">
-        <img src="./../img/about/GIF BRUIT ANIMATION.gif" class="about__noise-bg" />
+      <div class="about__pic-wrapper">
+        <img src="./../img/about/GIF BRUIT ANIMATION.gif" class="about__noisy-bg" />
         <img src="./../img/about/ilyes.png" class="about__moodynne" />
       </div>
     </section>
+    <div class="spacing"></div>
     <footer class="footer">
-      <div class="footer__infos footer__infos--about">
+      <div class="footer__infos">
         <p class="footer__location">Basé à Marseille, FR</p>
+        <div class="footer__divider footer__divider--desktop"></div>
         <p class="footer__mail">ilyesmouddinei@gmail.com</p>
+        <div class="footer__divider"></div>
         <div class="footer__socials">
           <a href="https://www.instagram.com/moodynne/?hl=fr" target="_blank">
             <img src="./../img/svg/instagram.svg" alt="Lien vers le compte instagram MOODYNNE" />

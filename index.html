@@ -4,35 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>MOODYNNE</title>
-    <link rel="stylesheet" href="styles/main.css" />
+    <title>MOODYNNE - Projets</title>
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
-    <!-- Mobile version -->
     <nav class="header">
-      <a href="#projets" class="header__link header__link--active">Projets</a>
-      <a href="./pages/about.html" class="header__link">À propos</a>
-      <a href="#contact" class="header__link">Contact</a>
+      <a href="./index.html" class="header__ilyes">Mouddine Ilyes - Designer Graphique</a>
+      <div class="header__link-group">
+        <a href="#" class="header__link header__link--active">Projets</a>
+        <a href="./pages/about.html" class="header__link">À propos</a>
+        <a href="#contact" class="header__link">Contact</a>
+      </div>
     </nav>
-    <div class="divider"></div>
-    <section class="title--mobile">
-      <h1 class="title__text">Projets</h1>
-    </section>
-    <div class="divider"></div>
-    <section class="arrows--mobile">
-      <p class="arrows__icon">🡻</p>
-      <p class="arrows__icon">🡻</p>
-      <p class="arrows__icon">🡻</p>
-      <p class="arrows__icon">🡻</p>
-    </section>
-    <div class="divider"></div>
+    <div class="divider divider--permanent"></div>
     <section class="projects">
-      <article class="project-card">
-        <img
-          src="./img/marmite-joyeuse/MARMITE POSTER ROUGE.png"
-          alt="Poster contenant une marmite"
-          class="project-card__media"
-        />
+      <h1 class="projects__title">Projets</h1>
+      <img src="./img/arrows.svg" class="projects__arrows" />
+      <div class="divider divider--col-span divider--desktop mb-2"></div>
+      <a class="project-card" id="marmite-joyeuse" href="./pages/marmite-joyeuse.html">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./img/marmite-joyeuse/desktop-thumbnail.png" />
+          <img
+            src="./img/marmite-joyeuse/mobile-thumbnail.png"
+            alt="Miniature du projet LA MARMITE JOYEUSE"
+            class="project-card__thumbnail"
+          />
+        </picture>
         <div class="project-card__infos">
           <h2 class="project-card__title">LA MARMITE JOYEUSE</h2>
           <p class="project-card__description">
@@ -40,9 +37,12 @@
             conviviale qui reflète ses valeurs de partage et de créativité.
           </p>
         </div>
-      </article>
-      <article class="project-card">
-        <img src="./img/meeal/MEEAL thumbnail.png" alt="Logo MEEAL" class="project-card__media" />
+      </a>
+      <a class="project-card" id="meeal" href="./pages/meeal.html">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./img/meeal/desktop-thumbnail.png" />
+          <img src="./img/meeal/mobile-thumbnail.png" alt="Miniature du projet MEEAL" class="project-card__thumbnail" />
+        </picture>
         <div class="project-card__infos">
           <h2 class="project-card__title">MEEAL (en cours)</h2>
           <p class="project-card__description">
@@ -51,13 +51,33 @@
             travers un design chaleureux et accessible.
           </p>
         </div>
-      </article>
-      <article class="project-card">
-        <img
-          src="./img/take-a-break/Take a Break LOGO mockup.png"
-          alt="Logo MEEAL"
-          class="project-card__media project-card__media--focus-top-left"
-        />
+      </a>
+      <a class="project-card" id="anthropologie" href="./pages/anthropologie.html">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./img/anthropologie/desktop-thumbnail.png" />
+          <img
+            src="./img/anthropologie/mobile-thumbnail.png"
+            alt="Miniature du projet ANTHROPOLOGIE"
+            class="project-card__thumbnail"
+          />
+        </picture>
+        <div class="project-card__infos">
+          <h2 class="project-card__title">ANTHROPOLOGIE</h2>
+          <p class="project-card__description">
+            Projet éditorial de vulgarisation autour de l’anthropologie, proposant une collection d’ouvrages accessibles
+            et visuellement cohérents pour rendre les sciences humaines plus lisibles et attractives.
+          </p>
+        </div>
+      </a>
+      <a class="project-card" id="take-a-break" href="./pages/take-a-break.html">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./img/take-a-break/desktop-thumbnail.png" />
+          <img
+            src="./img/take-a-break/mobile-thumbnail.png"
+            alt="Miniature du projet TAKE A BREAK"
+            class="project-card__thumbnail"
+          />
+        </picture>
         <div class="project-card__infos">
           <h2 class="project-card__title">TAKE A BREAK</h2>
           <p class="project-card__description">
@@ -65,9 +85,9 @@
             bien-être à travers une expérience apaisante et inclusive.
           </p>
         </div>
-      </article>
-      <article class="project-card">
-        <video class="project-card__media" autoplay muted loop playsinline>
+      </a>
+      <a class="project-card" id="memoire-dnmade" href="./pages/memoire-dnmade.html">
+        <video class="project-card__thumbnail" autoplay muted loop playsinline>
           <source src="./img/memoire-dnmade/loop.mp4" type="video/mp4" />
         </video>
         <div class="project-card__infos">
@@ -77,9 +97,14 @@
             accompagner la mémoire et l’identité.
           </p>
         </div>
-      </article>
-      <article class="project-card">
-        <img src="./img/meeal-sans/GIF MEEAL SANS.gif" alt="Typo MEEAL" class="project-card__media" />
+      </a>
+      <a class="project-card" id="typo-meeal" href="./pages/meeal-sans.html">
+        <img
+          src="./img/meeal-sans/GIF MEEAL SANS.gif"
+          alt="Miniature du projet TYPO MEEAL"
+          class="project-card__thumbnail"
+          loading="lazy"
+        />
         <div class="project-card__infos">
           <h2 class="project-card__title">TYPO - MEEAL SANS</h2>
           <p class="project-card__description">
@@ -87,9 +112,16 @@
             et visuellement cohérents pour rendre les sciences humaines plus lisibles et attractives.
           </p>
         </div>
-      </article>
-      <article class="project-card">
-        <img src="./img/typo-doppler/Thumbnail.svg" alt="Typo MEEAL" class="project-card__media" />
+      </a>
+      <a class="project-card" id="typo-doppler" href="./pages/typo-doppler.html">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./img/typo-doppler/desktop-thumbnail.svg" />
+          <img
+            src="./img/typo-doppler/mobile-thumbnail.svg"
+            alt="Miniature du projet TYPO DOPPLER"
+            class="project-card__thumbnail"
+          />
+        </picture>
         <div class="project-card__infos">
           <h2 class="project-card__title">TYPO - DOPLER</h2>
           <p class="project-card__description">
@@ -97,12 +129,13 @@
             bien-être à travers une expérience apaisante et inclusive.
           </p>
         </div>
-      </article>
-      <article class="project-card">
+      </a>
+      <a class="project-card" id="jpo-diderot" href="./pages/jpo-diderot.html">
         <img
-          src="./img/jpo/GIF JPO VIDEO PAYSAGE.gif"
-          alt="Typo MEEAL"
-          class="project-card__media project-card__media--focus-bottom"
+          src="./img/jpo/jpo-loop.gif"
+          alt="Miniature animée du projet JPO DIDEROT"
+          class="project-card__thumbnail"
+          loading="lazy"
         />
         <div class="project-card__infos">
           <h2 class="project-card__title">JPO DIDEROT</h2>
@@ -111,524 +144,14 @@
             de l’établissement à travers un univers graphique fluide et coloré.
           </p>
         </div>
-      </article>
-    </section>
-    <!-- Desktop version -->
-    <nav class="header header--desktop">
-      <p class="header__ilyes">Mouddine Ilyes - Designer Graphique</p>
-      <div class="header__link-container">
-        <a href="#projects" class="header__link header__link--active">Projets</a>
-        <a href="./pages/about.html" class="header__link">À propos</a>
-        <a href="#contact" class="header__link">Contact</a>
-      </div>
-    </nav>
-    <div class="divider divider--desktop"></div>
-    <section class="introduction">
-      <img src="./img/MOODY.svg" style="margin-top: -4px" />
-      <div class="introduction__nne-container">
-        <img src="./img/NNE.svg" class="introduction__nne" />
-        <div class="introduction__pic-container">
-          <img src="./img/about/GIF BRUIT ANIMATION.gif" class="introduction__noise-bg" />
-          <img src="./img/about/ilyes.png" class="introduction__moodynne" />
-        </div>
-      </div>
-    </section>
-    <div class="divider divider--desktop"></div>
-    <section class="skills">
-      <div class="skills__spacing-row"></div>
-      <div class="skills__spacing-row"></div>
-      <div class="skills__text-container">
-        <h2>Skills</h2>
-        <div class="divider divider--desktop"></div>
-        <img src="./img/arrow-bottom-left.svg" class="skills__arrow" />
-      </div>
-      <div class="skills__chip-container">
-        <div class="skills__chip">
-          <p>Typographie</p>
-        </div>
-        <div class="skills__chip">
-          <p>Design Social</p>
-        </div>
-        <div class="skills__chip">
-          <p>Wireframe</p>
-        </div>
-        <div class="skills__chip">
-          <p>Motion Design</p>
-        </div>
-        <div class="skills__chip">
-          <p>UX</p>
-        </div>
-        <div class="skills__chip">
-          <p>Composition</p>
-        </div>
-        <div class="skills__chip">
-          <p>Autonomie</p>
-        </div>
-        <div class="skills__chip">
-          <p>Photoshop</p>
-        </div>
-        <div class="skills__chip">
-          <p>Packaging</p>
-        </div>
-        <div class="skills__chip">
-          <p>UI</p>
-        </div>
-        <div class="skills__chip">
-          <p>Édition</p>
-        </div>
-        <div class="skills__chip">
-          <p>Illustrator</p>
-        </div>
-        <div class="skills__chip">
-          <p>Impression</p>
-        </div>
-        <div class="skills__chip">
-          <p>Identité visuelle</p>
-        </div>
-        <div class="skills__chip">
-          <p>App</p>
-        </div>
-        <div class="skills__chip">
-          <p>Persona</p>
-        </div>
-        <div class="skills__chip">
-          <p>Typographie expressive</p>
-        </div>
-        <div class="skills__chip">
-          <p>Web app</p>
-        </div>
-        <div class="skills__chip">
-          <p>User Flow</p>
-        </div>
-        <div class="skills__chip">
-          <p>Accessibilité</p>
-        </div>
-        <div class="skills__chip">
-          <p>Figma</p>
-        </div>
-        <div class="skills__chip">
-          <p>InDesign</p>
-        </div>
-        <div class="skills__chip">
-          <p>Colorimétrie</p>
-        </div>
-        <div class="skills__chip">
-          <p>Édition</p>
-        </div>
-        <div class="skills__chip">
-          <p>Fanzine</p>
-        </div>
-        <div class="skills__chip">
-          <p>Dépliant</p>
-        </div>
-        <div class="skills__chip">
-          <p>Pédagogie</p>
-        </div>
-        <div class="skills__chip">
-          <p>Charte graphique</p>
-        </div>
-        <div class="skills__chip">
-          <p>UI</p>
-        </div>
-        <div class="skills__chip">
-          <p>Scénographie</p>
-        </div>
-        <div class="skills__chip">
-          <p>Lightroom</p>
-        </div>
-        <div class="skills__chip">
-          <p>Ligne éditoriale</p>
-        </div>
-        <div class="skills__chip">
-          <p>Logotype</p>
-        </div>
-        <div class="skills__chip">
-          <p>Web</p>
-        </div>
-      </div>
-    </section>
-    <div class="divider divider--desktop"></div>
-    <section class="quote">
-      <img src="./img/quotes.svg" class="quote__figure" />
-      <div class="quote__text-group">
-        <h2>
-          (J’écrirai une citation inspirante quand<br />
-          j’aurai obtenu le master qui m’inspire.)
-        </h2>
-        <p>Mouddine Ilyes</p>
-      </div>
-    </section>
-    <section class="projects--desktop">
-      <article class="project">
-        <section class="project__title">
-          <h2 class="project-title-fix">La Marmite Joyeuse – Marseille</h2>
-          <p class="project__paragraph">
-            Dans le cadre du projet “Simplicité !”, j’ai conçu l’identité visuelle de La Marmite Joyeuse, un restaurant
-            solidaire marseillais qui valorise le partage, la convivialité et l’entraide. Ce travail s’appuie sur les
-            principes d’éco-conception, de sobriété et de participation citoyenne afin de créer une identité accessible,
-            durable et cohérente avec les valeurs du lieu. Les supports, comme la carte de visite à double fonction et
-            les visuels DIY réalisés avec les clients, traduisent une approche responsable du design graphique, centrée
-            sur l’humain et le lien social.
-          </p>
-        </section>
-        <div class="divider divider--desktop mt-1 mb-2"></div>
-        <section class="project__pictures">
-          <img src="./img/marmite-joyeuse/Logo-marmite-black-and-orange.png" class="marmite-joyeuse__first-pic" />
-          <img src="./img/marmite-joyeuse/Affiche-marmite.png" class="marmite-joyeuse__second-pic" />
-          <img src="./img/marmite-joyeuse/MARMITE POSTER VERT.png" class="marmite-joyeuse__other-pic" />
-          <img src="./img/marmite-joyeuse/MARMITE POSTER ROUGE.png" class="marmite-joyeuse__other-pic" />
-          <img src="./img/marmite-joyeuse/MARMITE POSTER BLEU.png" class="marmite-joyeuse__other-pic" />
-        </section>
-        <section class="project__section project__section--marmite-pics">
-          <p class="project__paragraph mt-3 mb-1">
-            Pour la mise en situation et le déploiement, j’ai décliné l’identité sur une série d’affiches modulables,
-            pensées pour l’affichage de rue et la vitrine, avec des variantes colorées qui gardent une lecture immédiate
-            (promesse, horaires, adresse). La carte de visite devient un objet utile et durable, complétée par une carte
-            de fidélité simple (tampons) pour encourager le retour. Enfin, j’ai créé un dispositif participatif
-            “Dessine-moi ta Marmite Joyeuse !” : des cartes à compléter qui invitent les clients à s’approprier le
-            symbole, générant des déclinaisons spontanées et renforçant le lien social.
-          </p>
-          <h2 class="project__smaller-title mb-1">Les différents supports</h2>
-          <div class="marmite-joyeuse__stacked-pics">
-            <img src="./img/marmite-joyeuse/WALL MARMITE POSTERS.png" class="marmite-joyeuse__support-pic" />
-            <img src="./img/marmite-joyeuse/MARMITE POSTER atelier 2.png" class="marmite-joyeuse__support-pic" />
-            <img src="./img/marmite-joyeuse/MARMITE POSTER atelier.png" class="marmite-joyeuse__support-pic" />
-          </div>
-          <div class="marmite-joyeuse__tall-pic-container">
-            <img
-              src="./img/marmite-joyeuse/les-ruelles-cachees vert orange rouge.png"
-              class="marmite-joyeuse__tall-pic"
-            />
-            <img
-              src="./img/marmite-joyeuse/Carte de visite moclup marmite no background.png"
-              class="marmite-joyeuse__business-card"
-            />
-            <img src="./img/marmite-joyeuse/atelier mockup.png" class="marmite-joyeuse__post-it" />
-          </div>
-        </section>
-        <section class="colorful-range">
-          <div class="colorful-range__container">
-            <h2 class="colorful-range__title">Gamme colorée</h2>
-            <div class="colorful-range__band-container">
-              <div class="colorful-range__band colorful-range__band--EB651C">
-                <p class="colorful-range__label">#EB651C</p>
-              </div>
-              <div class="colorful-range__band colorful-range__band--367243">
-                <p class="colorful-range__label">#367243</p>
-              </div>
-              <div class="colorful-range__band colorful-range__band--CC3D37">
-                <p class="colorful-range__label">#CC3D37</p>
-              </div>
-              <div class="colorful-range__band colorful-range__band--4F9AD4">
-                <p class="colorful-range__label">#4F9AD4</p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </article>
-      <div class="divider divider--desktop mt-2"></div>
-      <article class="project">
-        <section class="project__title">
-          <h2 class="project-title-fix">Take a Break</h2>
-          <p class="project__paragraph">
-            La santé mentale est un enjeu majeur de notre société, particulièrement chez les jeunes. Face à la pression
-            sociale, au stress et à la stigmatisation entourant les troubles psychologiques, il devient essentiel de
-            créer des outils accessibles favorisant la compréhension et la prévention. Take a Break s’inscrit dans cette
-            démarche en proposant une application mobile dédiée à la sensibilisation et au bien-être mental, pensée pour
-            informer, apaiser et accompagner les jeunes dans leur quotidien.
-          </p>
-        </section>
-        <div class="divider divider--desktop mt-1 mb-2"></div>
-        <section class="project__pictures">
-          <img src="./img/take-a-break/logo take a break.png" class="takeabreak__first-pic" loading="lazy" />
-          <img src="./img/take-a-break/take-a-break2.png" class="takeabreak__second-pic" loading="lazy" />
-          <div class="takeabreak__third-pic-container">
-            <img src="./img/take-a-break/take-a-break3.png" class="takeabreak__third-pic" loading="lazy" />
-            <img src="./img/take-a-break/homme take a break.png" class="takeabreak__man" loading="lazy" />
-            <img src="./img/take-a-break/femme take a break.png" class="takeabreak__woman" loading="lazy" />
-          </div>
-        </section>
-        <section class="project__section">
-          <p class="project__paragraph mt-3 mb-1">
-            L’identité visuelle de Take a Break s’appuie sur un univers chaleureux et rassurant pour évoquer la
-            bienveillance et le réconfort. Les formes arrondies et les illustrations dessinées à la main renforcent la
-            proximité et l’accessibilité du projet. La palette de couleurs combine des teintes douces et lumineuses,
-            symbolisant l’équilibre entre apaisement et énergie positive, en cohérence avec les deux modes de
-            l’application. L’ensemble crée une atmosphère accueillante, inclusive et propice à la détente.
-          </p>
-          <h2 class="project__smaller-title mb-2">Quelques maquettes</h2>
-          <div class="project__pictures">
-            <img
-              src="./img/take-a-break/mockup1.png"
-              class="takeabreak__mockup takeabreak__mockup--first"
-              loading="lazy"
-            />
-            <img src="./img/take-a-break/mockup2.png" class="takeabreak__mockup" loading="lazy" />
-            <img src="./img/take-a-break/mockup3.png" class="takeabreak__mockup" loading="lazy" />
-            <img src="./img/take-a-break/mockup4.png" class="takeabreak__mockup" loading="lazy" />
-            <img src="./img/take-a-break/mockup5.png" class="takeabreak__mockup" loading="lazy" />
-          </div>
-        </section>
-        <section class="colorful-range">
-          <div class="colorful-range__container">
-            <h2 class="colorful-range__title">Gamme colorée</h2>
-            <div class="colorful-range__band-container">
-              <div class="colorful-range__band colorful-range__band--F1E1C3">
-                <p class="colorful-range__label">#F1E1C3</p>
-              </div>
-              <div class="colorful-range__band colorful-range__band--F3C539">
-                <p class="colorful-range__label">#F3C539</p>
-              </div>
-              <div class="colorful-range__band colorful-range__band--B3C8D8">
-                <p class="colorful-range__label">#B3C8D8</p>
-              </div>
-              <div class="colorful-range__band colorful-range__band--769CBE">
-                <p class="colorful-range__label">#769CBE</p>
-              </div>
-              <div class="colorful-range__band colorful-range__band--4A74A7">
-                <p class="colorful-range__label">#4A74A7</p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </article>
-      <div class="divider divider--desktop mt-2"></div>
-      <article class="project">
-        <section class="project__title">
-          <h2 class="project-title-fix">MEEAL - L’app du repas partagé</h2>
-          <p class="project__paragraph">
-            MEEAL est une application mobile qui repense le repas partagé comme une expérience sociale locale. Elle
-            permet de créer ou rejoindre des repas organisés par la communauté, appelés Meeals, pour favoriser la
-            rencontre, l’inclusion et la convivialité. Le projet s’appuie sur trois intentions centrales, créer du lien,
-            limiter le gaspillage grâce à la cuisine maison, et rester accessible grâce à un modèle gratuit ou très
-            abordable. L’enjeu était de concevoir un cadre clair et rassurant, centré sur le collectif plutôt que sur la
-            logique de “dating”.
-          </p>
-        </section>
-        <div class="divider divider--desktop mt-1 mb-2"></div>
-        <section class="project__pictures">
-          <img src="./img/meeal/MEEAL.png" class="meeal__first-pic" loading="lazy" />
-          <img src="./img/meeal/MEEAL thumbnail.png" class="meeal__second-pic" loading="lazy" />
-          <div class="meeal_third-pic-container">
-            <img src="./img/meeal/MEEAL-STACKED.svg" class="meeal__third-pic" loading="lazy" />
-            <img src="./img/meeal/phone1.png" class="meeal__first-phone" loading="lazy" />
-            <img src="./img/meeal/phone2.png" class="meeal__second-phone" loading="lazy" />
-          </div>
-        </section>
-        <section class="project__section">
-          <p class="project__paragraph mt-5 mb-2">
-            J’ai choisi un langage visuel chaleureux et affirmé pour installer une sensation immédiate de convivialité.
-            Le logotype, construit à partir de formes pleines et arrondies, crée une identité accueillante et facilement
-            identifiable. Le soleil, élément central du système graphique, exprime la chaleur, le partage et la
-            proximité, tout en devenant un repère visuel récurrent dans l’interface. L’ensemble vise à instaurer une
-            identité cohérente, lisible et engageante, du logo jusqu’aux maquettes de l’application.
-          </p>
-          <h2 class="project__smaller-title mb-2 project-title-fix">Quelques maquettes</h2>
-          <div class="project__pictures">
-            <img src="./img/meeal/maquette1.png" class="meeal__mockup meeal__mockup--first" loading="lazy" />
-            <img src="./img/meeal/maquette2.png" class="meeal__mockup" loading="lazy" />
-            <img src="./img/meeal/maquette3.png" class="meeal__mockup" loading="lazy" />
-            <img src="./img/meeal/maquette4.png" class="meeal__mockup" loading="lazy" />
-            <img src="./img/meeal/maquette5.png" class="meeal__mockup" loading="lazy" />
-          </div>
-        </section>
-        <section class="colorful-range">
-          <div class="colorful-range__container">
-            <h2 class="colorful-range__title">Gamme colorée</h2>
-            <div class="colorful-range__band-container">
-              <div class="colorful-range__band colorful-range__band--FCF4F0">
-                <p class="colorful-range__label colorful-range__label--black">#FCF4F0</p>
-              </div>
-              <div class="colorful-range__band colorful-range__band--FFCA00">
-                <p class="colorful-range__label colorful-range__label--black">#FFCA00</p>
-              </div>
-              <div class="colorful-range__band colorful-range__band--ED6C0C">
-                <p class="colorful-range__label">#ED6C0C</p>
-              </div>
-              <div class="colorful-range__band colorful-range__band--E30616">
-                <p class="colorful-range__label">#E30616</p>
-              </div>
-              <div class="colorful-range__band colorful-range__band--1E3F3A">
-                <p class="colorful-range__label">#1E3F3A</p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </article>
-      <div class="divider divider--desktop mt-2"></div>
-      <article class="project">
-        <section class="project__title">
-          <h2>Anthropologie pour tous·tes</h2>
-          <p class="project__paragraph">
-            Dans le cadre d’un projet éditorial consacré à la vulgarisation de l’anthropologie, j’ai imaginé une
-            collection de livres visant à rendre des notions de sciences humaines plus accessibles et attractives pour
-            une cible définie. L’enjeu consistait à transformer des contenus denses (cultures, sociétés, rituels) en
-            objets de lecture clairs, pédagogiques et inclusifs, sans appauvrir le propos. La démarche s’appuie sur une
-            phase de recherches (anthropologie, vulgarisation, logique de collection), une veille de maisons d’édition
-            existantes et la rédaction d’un cahier des charges structurant. À partir de ces éléments, j’ai posé une
-            ligne graphique cohérente et décliné l’identité sur trois ouvrages, afin de démontrer la solidité du système
-            éditorial et sa capacité à se renouveler d’un numéro à l’autre.
-          </p>
-        </section>
-        <div class="divider divider--desktop mt-1 mb-1"></div>
-        <section class="project__pictures">
-          <img src="./img/anthropologie/anthro1.jpg" class="anthro__first-pic" loading="lazy" />
-          <img src="./img/anthropologie/anthro2.jpg" class="anthro__second-pic" loading="lazy" />
-          <img src="./img/anthropologie/anthro3.jpg" class="anthro__other-pic" loading="lazy" />
-          <img src="./img/anthropologie/anthro4.jpg" class="anthro__other-pic" loading="lazy" />
-          <img src="./img/anthropologie/anthro5.jpg" class="anthro__other-pic" loading="lazy" />
-        </section>
-        <section class="project__section">
-          <p class="project__paragraph mt-3 mb-2">
-            J’ai construit la collection autour d’un système volontairement minimal et pensé dans une logique
-            d’éco-conception : palette très réduite, usage maîtrisé de l’encre et formes simples, afin de réduire les
-            coûts d’impression tout en conservant une identité forte. Les couvertures reposent sur un trait continu
-            unique, comme un fil narratif, décliné différemment à chaque tome (Naître, Grandir, Séduire) pour créer de
-            la variation sans perdre l’unité. La hiérarchie est tenue par des titres courts, des repères de collection
-            discrets et un grand espace blanc, rendant la collection immédiatement reconnaissable et durable.
-          </p>
-          <h2 class="project__smaller-title mb-1">Couvertures</h2>
-          <div class="project__pictures project__pictures--anthropologie">
-            <img src="./img/anthropologie/RENDU NAITRE.jpg" class="anthro__cover anthro__cover--first" loading="lazy" />
-            <img src="./img/anthropologie/RENDU GRANDIR.jpg" class="anthro__cover" loading="lazy" />
-            <img src="./img/anthropologie/RENDU SEDUIRE.jpg" class="anthro__cover" loading="lazy" />
-            <img src="./img/anthropologie/RENDU S_UNIR.jpg" class="anthro__cover" loading="lazy" />
-            <img src="./img/anthropologie/RENDU MOURIR.jpg" class="anthro__cover" loading="lazy" />
-          </div>
-        </section>
-      </article>
-      <div class="divider divider--desktop mt-2"></div>
-      <article class="project">
-        <section class="project__title">
-          <h2 class="project-title-fix">Mémoire(s) fragiles - DNMADE</h2>
-          <p class="project__paragraph">
-            Réalisé dans le cadre de mon mémoire de diplôme en DNMADE Graphisme, Mémoire(s) fragiles aborde la question
-            de la maladie d’Alzheimer à travers une approche sensible du design. Ce projet cherche à comprendre comment
-            l’image, la matière et la mise en forme peuvent soutenir la mémoire et préserver une part d’identité lorsque
-            les repères s’effritent. Il s’agit d’un travail à la fois graphique et humain, ancré dans l’observation du
-            quotidien et des relations qui demeurent malgré l’oubli.
-          </p>
-        </section>
-
-        <div class="divider divider--desktop mt-1 mb-1"></div>
-        <section class="project__pictures">
-          <video class="memoire__vid" preload="none" autoplay muted loop playsinline>
-            <source src="./img/memoire-dnmade/loop.mp4" type="video/mp4" />
-          </video>
-          <img src="./img/memoire-dnmade/memoire1.jpg" class="memoire__first-pic" loading="lazy" />
-          <img src="./img/memoire-dnmade/memoire2.jpg" class="memoire__second-pic" loading="lazy" />
-        </section>
-        <section class="project__section">
-          <p class="project__paragraph mt-1">
-            Le mémoire adopte un format légèrement inférieur à l’A5 pour instaurer un rapport intime et personnel à
-            l’objet. La mise en page alterne texte et image sur des pages distinctes, favorisant une lecture claire et
-            équilibrée. Le jaune agit comme repère visuel, associé au noir pour un contraste lisible et sobre. Le
-            traitement des images repose sur une dégradation progressive des pixels, évoquant la perte de repères et la
-            fragilité du souvenir. Le mouvement ne passe donc pas par un effet graphique direct, mais par la narration
-            de l’objet éditorial lui-même, où la lisibilité se fragilise au fil des pages, comme les repères au fil de
-            la maladie.
-          </p>
-          <h2 class="project__smaller-title mb-1">Quelques photos</h2>
-          <div class="memoire__pictures">
-            <img src="./img/memoire-dnmade/memoire3.jpg" loading="lazy" />
-            <img src="./img/memoire-dnmade/memoire4.jpg" loading="lazy" />
-            <img src="./img/memoire-dnmade/memoire5.jpg" loading="lazy" />
-          </div>
-          <h2 class="project__smaller-title mb-1">La mise en page</h2>
-          <div class="project__pictures">
-            <img src="./img/memoire-dnmade/page1.png" class="memoire__small-pic" loading="lazy" />
-            <img src="./img/memoire-dnmade/page2.png" class="memoire__small-pic" loading="lazy" />
-            <img src="./img/memoire-dnmade/page3.png" class="memoire__big-pic" loading="lazy" />
-          </div>
-        </section>
-      </article>
-      <div class="divider divider--desktop mt-2"></div>
-      <article class="project">
-        <section class="project__title">
-          <h2>TYPO - Meeal Sans</h2>
-          <p class="project__paragraph">
-            Conçue dans le cadre du projet Meeal, une application dédiée au partage de repas entre particuliers, la
-            typographie participe à la cohérence globale de l’identité visuelle. Elle prolonge les valeurs de
-            convivialité et de proximité portées par le projet à travers des formes arrondies et un rythme souple,
-            favorisant la lisibilité sur interface. Meeal Sans a été pensée comme une extension naturelle du logotype,
-            garantissant une continuité visuelle entre l’univers graphique et l’expérience utilisateur.
-          </p>
-        </section>
-        <div class="divider divider--desktop mt-1 mb-2"></div>
-        <section class="project__section">
-          <h2 class="project__smaller-title mb-1">Logotype</h2>
-          <img src="./img/meeal/MEEAL thumbnail.png" class="meeal-sans__logotype" />
-          <h2 class="project__smaller-title mb-1 mt-2">Caractères typographiques</h2>
-          <img src="./img/meeal-sans/MEEAL-Characters.svg" class="meeal-sans__characters" />
-          <p class="project__paragraph mt-3 mb-4">
-            La typographie reprend les formes pleines et arrondies du logotype pour renforcer la cohérence de
-            l’identité. Son dessin combine structure et douceur, créant un équilibre entre lisibilité et expressivité.
-            Les courbes généreuses et les détails singuliers apportent une dimension conviviale et reconnaissable, en
-            accord avec l’esprit accessible et communautaire du projet Meeal. Elle est destinée à des usages
-            d’affichage, tels que les titres, les boutons ou les éléments identitaires, où elle peut exprimer pleinement
-            sa personnalité graphique.
-          </p>
-        </section>
-      </article>
-      <div class="divider divider--desktop mt-2"></div>
-      <article class="project">
-        <section class="project__title">
-          <h2>TYPO - Dopler</h2>
-          <p class="project__paragraph">
-            Projet typographique autour des notions de fusion et de superposition, visant à expérimenter la manière dont
-            les formes peuvent s’assembler ou coexister au sein d’un même signe. L’enjeu était de traduire ces principes
-            visuellement tout en conservant une cohérence propre à la typographie.
-          </p>
-        </section>
-        <div class="divider divider--desktop mb-1"></div>
-        <section class="project__section">
-          <h2 class="project__smaller-title mb-1">Caractères typographiques</h2>
-          <img src="./img/typo-doppler/typo.svg" class="dopler__pic" />
-          <p class="project__paragraph mt-3 mb-4">
-            L’effet Doppler est un phénomène physique où la fréquence des ondes (sonores ou lumineuses) varie selon le
-            déplacement de leur source par rapport à un observateur : en se rapprochant, les ondes se compressent
-            (fréquence élevée) et, en s’éloignant, elles s’étirent (fréquence réduite). Inspirée de ce principe, ma
-            typographie joue sur le concept de fusion et de superposition. Les contours des lettres sont multipliés et
-            décalés pour créer un effet visuel d’ondulation et de mouvement, rappelant la dynamique des ondes Doppler.
-            Ce procédé donne une impression de profondeur propre à cet effet, tout en conservant une structure lisible.
-            De loin, cette superposition produit un effet de trouble visuel, perturbant légèrement la perception et
-            renforçant l’idée de mouvement et de déformation.
-          </p>
-        </section>
-      </article>
-      <div class="divider divider--desktop mt-2"></div>
-      <article class="project">
-        <section class="project__title">
-          <h2>JPO – Journées portes ouvertes</h2>
-          <p class="project__paragraph">
-            Création de supports de communication pour les Journées portes ouvertes de l’établissement. Le projet
-            comprend des affiches, visuels numériques et vidéos visant à valoriser les formations et à orienter les
-            visiteurs dans une atmosphère dynamique et accueillante.
-          </p>
-        </section>
-        <div class="divider divider--desktop mt-1 mb-1"></div>
-        <section class="project__section">
-          <h2 class="project__smaller-title mb-1">Logotype de l’établissement</h2>
-          <img src="./img/jpo/logotype.png" class="jpo__logotype" />
-          <h2 class="project__smaller-title mt-2 mb-1">Les supports</h2>
-          <div class="jpo__support">
-            <img src="./img/jpo/GIF JPO VIDEO PAYSAGE.gif" class="jpo__first-pic" loading="lazy" />
-            <img src="./img/jpo/Rectangle 103.png" class="jpo__other-pic" loading="lazy" />
-            <img src="./img/jpo/Rectangle 104.png" class="jpo__other-pic" loading="lazy" />
-          </div>
-          <p class="project__paragraph mt-1 mb-4">
-            L’identité visuelle s’appuie sur un jeu de formes fluides et de dégradés colorés pour évoquer le mouvement
-            constant qui anime l’établissement. Avec son grand nombre d’élèves et la diversité de ses parcours, l’école
-            est un lieu vivant et en perpétuelle effervescence. Ce traitement graphique traduit cette dynamique tout en
-            créant une ambiance accueillante et contemporaine, en accord avec l’esprit des Journées portes ouvertes.
-          </p>
-        </section>
-      </article>
+      </a>
     </section>
     <footer class="footer">
-      <div class="footer__bg"></div>
       <div class="footer__infos">
+        <p class="footer__location">Basé à Marseille, FR</p>
+        <div class="footer__divider footer__divider--desktop"></div>
         <p class="footer__mail">ilyesmouddinei@gmail.com</p>
+        <div class="footer__divider"></div>
         <div class="footer__socials">
           <a href="https://www.instagram.com/moodynne/?hl=fr" target="_blank">
             <img src="./img/svg/instagram.svg" alt="Lien vers le compte instagram MOODYNNE" />
