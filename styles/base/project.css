@@ -64,10 +64,14 @@
 }
 
 .project__links img {
-  height: clamp(48px, 40.9032px + 2.2177vw, 92px);
-  width: clamp(48px, 40.9032px + 2.2177vw, 92px);
+  height: clamp(44px, 42.0645px + 0.6048vw, 56px);
+  width: clamp(44px, 42.0645px + 0.6048vw, 56px);
   display: block;
   object-fit: contain;
+}
+
+.project__bottom-spacing {
+  margin-bottom: clamp(4rem, 3.5968rem + 2.0161vw, 6.5rem);
 }
 
 /* sm */
