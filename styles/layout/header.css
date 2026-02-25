@@ -33,19 +33,12 @@
   font-weight: normal;
   text-align: center;
   text-decoration: none;
-  transition: 0.3s;
 }
 
 .header__ilyes:hover,
 .header__link:hover {
   background-color: #ffffff;
   color: #000000;
-}
-
-.header__ilyes:active,
-.header__link:active {
-  opacity: 0.85;
-  transform: scale(0.9);
 }
 
 .header__link:last-child {
