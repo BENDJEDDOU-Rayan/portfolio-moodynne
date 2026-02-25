@@ -17,6 +17,85 @@
       </div>
     </nav>
     <div class="divider divider--permanent"></div>
+    <section class="projects__moodynne">
+      <img src="./img/svg/MOODY.svg" class="projects__moody" />
+      <img src="./img/svg/NNE.svg" class="projects__nne" />
+      <div class="projects__pic-wrapper">
+        <img src="./img/about/GIF BRUIT ANIMATION.gif" class="projects__pic" />
+        <img src="./img/about/ilyes.png" class="projects__ilyes" />
+      </div>
+    </section>
+    <section class="projects__skills">
+      <div class="projects__skills-spacing"></div>
+      <h2>Skills</h2>
+      <div class="projects__skills-chips">
+        <div class="marquee">
+          <div class="marquee6k" data-speed="0.25">
+            <div class="marquee__track">
+              <p class="chip">Typographie</p>
+              <p class="chip">Design Social</p>
+              <p class="chip">Wireframe</p>
+              <p class="chip">Motion Design</p>
+              <p class="chip">UX</p>
+            </div>
+          </div>
+          <div class="marquee6k" data-speed="0.25" data-reverse="true">
+            <div class="marquee__track">
+              <p class="chip">Composition</p>
+              <p class="chip">Autonomie</p>
+              <p class="chip">Photoshop</p>
+              <p class="chip">Packaging</p>
+              <p class="chip">UI</p>
+            </div>
+          </div>
+          <div class="marquee6k" data-speed="0.25" data-reverse="false">
+            <div class="marquee__track">
+              <p class="chip">Édition</p>
+              <p class="chip">Illustrator</p>
+              <p class="chip">Impression</p>
+              <p class="chip">Identité visuelle</p>
+              <p class="chip">App</p>
+            </div>
+          </div>
+          <div class="marquee6k" data-speed="0.25" data-reverse="true">
+            <div class="marquee__track">
+              <p class="chip">Persona</p>
+              <p class="chip">Typographie expressive</p>
+              <p class="chip">Web app</p>
+              <p class="chip">User Flow</p>
+            </div>
+          </div>
+          <div class="marquee6k" data-speed="0.25" data-reverse="false">
+            <div class="marquee__track">
+              <p class="chip">Accessibilité</p>
+              <p class="chip">Figma</p>
+              <p class="chip">InDesign</p>
+              <p class="chip">Colorimétrie</p>
+              <p class="chip">Édition</p>
+            </div>
+          </div>
+          <div class="marquee6k" data-speed="0.25" data-reverse="true">
+            <div class="marquee__track">
+              <p class="chip">Fanzine</p>
+              <p class="chip">Dépliant</p>
+              <p class="chip">Pédagogie</p>
+              <p class="chip">Charte graphique</p>
+              <p class="chip">UI</p>
+            </div>
+          </div>
+          <div class="marquee6k" data-speed="0.25" data-reverse="false">
+            <div class="marquee__track">
+              <p class="chip">Scénographie</p>
+              <p class="chip">Lightroom</p>
+              <p class="chip">Ligne éditoriale</p>
+              <p class="chip">Logotype</p>
+              <p class="chip">Web</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./img/arrow-bottom-left.svg" class="projects__skills-arrow" />
+    </section>
     <section class="projects">
       <h1 class="projects__title">Projets</h1>
       <img src="./img/arrows.svg" class="projects__arrows" />
@@ -162,5 +241,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/gh/SPACESODA/marquee6k@latest/marquee6k.min.js"></script>
+    <script>
+      window.addEventListener("load", () => marquee6k.init({ axis: "x" }));
+    </script>
   </body>
 </html>
