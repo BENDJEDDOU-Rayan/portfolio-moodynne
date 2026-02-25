@@ -24,7 +24,7 @@
 .header__link {
   padding: 1rem 0;
   flex: 1;
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
   background: none;
   border-radius: 8px;
   color: #ffffff;
@@ -33,6 +33,10 @@
   font-weight: normal;
   text-align: center;
   text-decoration: none;
+}
+
+.header__ilyes {
+  border: 2px solid #ffffff;
 }
 
 .header__ilyes:hover,
