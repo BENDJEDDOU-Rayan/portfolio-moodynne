@@ -10,36 +10,25 @@
 @font-face {
   font-family: "Gravita GEO Medium";
   src: url("./../fonts/Gravita-GEO-Medium.otf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Gravita GEO Light";
   src: url("./../fonts/Gravita-GEO-Light-.otf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Dosis Light";
   src: url("./../fonts/Dosis-Light.ttf");
-}
-
-@font-face {
-  font-family: "Gimbo Black";
-  src: url("./../fonts/Gimbo-Black.otf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "TT Commons Black";
   src: url("./../fonts/TT-Commons-Black.otf");
-}
-
-@font-face {
-  font-family: "TT Commons Light";
-  src: url("./../fonts/TT-Commons-Light.otf");
-}
-
-@font-face {
-  font-family: "TT Commons Thin";
-  src: url("./../fonts/TT-Commons-Thin.otf");
+  font-display: swap;
 }
 
 .projects {

@@ -3,7 +3,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: url("./../../img/background.png") repeat center;
+  background: url("./../../img/background.webp") repeat center;
   min-height: 100vh;
 }
 
