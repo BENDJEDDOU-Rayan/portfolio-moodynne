@@ -253,10 +253,8 @@
   .project-card {
     grid-column: span 3;
   }
-  #take-a-break .project-card__thumbnail,
-  #jpo-diderot .project-card__thumbnail,
-  #memoire-dnmade .project-card__thumbnail {
-    border: 1px solid #ffffff;
+  .project-card__thumbnail {
+    outline: 1px solid #ffffff;
   }
   #take-a-break,
   #marmite-joyeuse {
